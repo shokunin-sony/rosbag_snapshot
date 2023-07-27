@@ -492,9 +492,8 @@ void Snapshotter::pause()
 
 void Snapshotter::resume()
 {
-  clear();
   recording_ = true;
-  ROS_INFO("Buffering resumed and old data cleared.");
+  ROS_INFO("Buffering resumed.");
 }
 
 bool Snapshotter::enableCB(std_srvs::SetBool::Request& req, std_srvs::SetBool::Response& res)
